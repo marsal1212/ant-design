@@ -6,7 +6,7 @@ import { RadioChangeEvent } from '../radio';
 import { CheckboxChangeEvent } from '../checkbox';
 
 export type CompareFn<T> = ((a: T, b: T, sortOrder?: 'ascend' | 'descend') => number);
-export type ColumnFilterItem = { text: string; value: string, children?: ColumnFilterItem[] };
+export type ColumnFilterItem = { text: string; value: any, children?: ColumnFilterItem[] };
 
 export interface ColumnProps<T> {
   title?: React.ReactNode;
